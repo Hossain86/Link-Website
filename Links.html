@@ -3,212 +3,132 @@
     <head>
         <Title>All Links In One Place</Title>
         <link rel="icon" type="image/x-icon" href="favicon (1).ico">
-        <style>
-            body{
-                margin: 0;
-            }
-            .top-header{
-                margin-top: 0px;
-                display: grid;
-                grid-template-columns: 1fr;
-                background-color: #333;
-                text-align: center;
-                color: white;
-                margin-bottom: 10px;
-                font-size: 20px;
-                font-family:Arial, Helvetica, sans-serif ;
-                height: 80px;
-            }
-            .button-text{
-                text-decoration: none;
-                color: white;
-            }
-            .button-1{
-                display: grid;
-                margin-top: 10px;
-                margin-bottom: 15px;
-                border-radius: 15px;
-                background-color: #f5eded;
-                box-shadow: 10px 10px 10px rgba(0, 0, 0,0.3);
-                margin-left: 4%;
-                margin-right: 4%;
-            }
-            .all-button{
-                
-                display: grid;
-                grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-                margin-bottom: 10px;
-                height: 200px; 
-                width: 100%;
-                
-            }
-            .button{
-                margin-bottom: 15px;
-                height: 30px;
-                width: 80%;
-                margin-left: 10%;
-                
-                font-size: 16px;
-                background-color: rgb(3, 3, 3);
-                
-                border-radius: 5px;
-                cursor: pointer;
-                transition:box-shadow 0.15s;
-            }
-            .button:hover{
-                opacity: 0.9;
-                box-shadow: 10px 10px 10px rgba(0, 0, 0,0.2);
-            }
-            .button:active{
-                opacity: 0.4;
-                box-shadow: 10px 10px 10px rgba(0, 0, 0,0.4);
-            }
-            .button-title{
-                font-size: 20px;
-                font-family: Arial;
-                font-weight: bold;
-                margin-left: 5%;
-                margin-right: 5%;
-                margin-bottom: 5px;
-            }
-            .button-details{
-                font-size: 14px;
-                font-family: Arial;
-                margin-left: 8%;
-                margin-right: 5%;
-                margin-top: 5px;
-                color: rgb(96,96,96);
-                font-style:normal;
-            }
-        </style>
+        <link rel="stylesheet" href="Links.css">
     </head>
 
     <body>
+        
         <div class="top-header"> <p >Most Used Link In One Place</p></div>
-        <div class="all-button">
+        <div id="buttonContainer">
+            <div class="all-button" >
 
-            <div class="button-1">
-                
-            <p class="button-title">Visit Social Media</p>
-            <p class="button-details">The Time your are wasting here is valuable.
-                It distracts you from your reality.Don't waste your time here.</p>
-            <button class="button" ><a class="button-text" href="https://www.facebook.com/" 
-            target="_blank">FaceBook</a></button>
-
+                <div class="button-1">
+                    <p class="button-title">Visit Social Media</p>
+                    <p class="button-details">The time you are wasting here is valuable. It distracts you from your reality. Don't waste your time here.</p>
+                    <button class="button" data-url="https://www.facebook.com/">FaceBook</button>
+                </div>
+        
+                <div class="button-1">
+                    <p class="button-title">Visit Youtube</p>
+                    <p class="button-details">Watch YouTube videos here. Learn new skills here. Learn a lot. Gather your knowledge. Make yourself an asset.</p>
+                    <button class="button" data-url="https://youtube.com/">Youtube</button>
+                </div>
+        
+                <div class="button-1">
+                    <p class="button-title">Visit Aniwatch</p>
+                    <p class="button-details">Watch your favorite Anime online. One piece, Naruto, Bleach, Jujutsu Kaisen, Attack on Titan, and many more.</p>
+                    <button class="button" data-url="https://aniwatch.to/home">Aniwatch</button>
+                </div>
+    
+            
             </div>
-
+            
+            <div class="all-button">
+                <div class="button-1">
+    
+                    <p class="button-title">Visit W3Schools</p>
+                    <p class="button-details">Learn
+                            Programming in easy way here..Javascript, java, python, html, css..everything</p>
+                    <button class="button"data-url="https://www.w3schools.com/default.asp">W3Schools</button>
+        
+                    </div>
+        
+                    <div class="button-1">
+        
+                        <p class="button-title">Visit Codeforces</p>
+                        <p class="button-details">Practice programming here.
+                                The more you practice the more you will learn. 
+                                Try to solve atleast 1 problem per a day
+                                </p>
+                        <button class="button"data-url="https://codeforces.com/" 
+                            >Codeforces</button>
+            
+                        </div> 
+                        <div class="button-1">
+                    
+                            <p class="button-title">Messenger</p>
+                            <p class="button-details">The Time your are wasting here is valuable.
+                                It distracts you from your reality.Don't waste your time here.</p>
+                            <button class="button" data-url="https://www.messenger.com/" >Messenger</button>
+                
+                            </div>
+            </div>
+    
+            <!--New Line button-->
+    
+            <div class="all-button">
+    
+                
+    
+                <div class="button-1">
+    
+                    <p class="button-title">Translator(Eng-Ban)</p>
+                    <p class="button-details">Wacth youtube videos here. Learn new new skil here.
+                         Learn a lot.
+                        Gather your knowledge. Make yourself an asset.
+                    </p>
+                    <button class="button"data-url="https://www.google.com/search?q=english+to+bangla&oq=&aqs=chrome.1.35i39i362l8.1878979j0j7&sourceid=chrome&ie=UTF-8" 
+                        >Translator</button>
+        
+                    </div>
+                
             <div class="button-1">
-
-                <p class="button-title">Visit Youtube</p>
-                <p class="button-details">Wacth youtube videos here. Learn new new skil here.
-                     Learn a lot.
-                    Gather your knowledge. Make yourself an asset.
-                </p>
-                <button class="button"><a class="button-text" 
-                    href="https://www.youtube.com/" 
-                target="_blank">Youtube</a></button>
+    
+                <p class="button-title">CGPA Calculator</p>
+                <p class="button-details">Watch your favourite Anime online.
+                     One piece, Nauto, bleach, jujutsu kaisen, Attack on titan and many more</p>
+                <button class="button"data-url="https://cgpa-next-term.netlify.app/?fbclid=IwAR2uPcVbRAbq_Ss-xoDu5LOiVVnmnOoDh6zvP4pXeu77x5G3cdLfia7gwHA" 
+                    >Cgpa Calculator</button>
     
                 </div>
-            
-        <div class="button-1">
-
-            <p class="button-title">Visit Aniwatch</p>
-            <p class="button-details">Watch your favourite Anime online.
-                 One piece, Nauto, bleach, jujutsu kaisen, Attack on titan and many more</p>
-            <button class="button"><a class="button-text" 
-                href="https://aniwatch.to/home" 
-            target="_blank">Aniwatch</a></button>
-
-            </div>
-
-        <div class="button-1">
-
-            <p class="button-title">Visit W3Schools</p>
-            <p class="button-details">Learn
-                    Programming in easy way here..Javascript, java, python, html, css..everything</p>
-            <button class="button"><a class="button-text" 
-                href="https://www.w3schools.com/default.asp" 
-            target="_blank">W3Schools</a></button>
-
-            </div>
-
-            <div class="button-1">
-
-                <p class="button-title">Visit Codeforces</p>
-                <p class="button-details">Practice programming here.
-                        The more you practice the more you will learn. 
-                        Try to solve atleast 1 problem per a day
-                        </p>
-                <button class="button"><a class="button-text" 
-                    href="https://codeforces.com/" 
-                target="_blank">Codeforces</a></button>
     
-                </div> 
+            <div class="button-1">
+    
+                <p class="button-title">Geek-for-Geeks-Java</p>
+                <p class="button-details">Learn
+                        Programming in easy way here..Javascript, java, python, html, css..everything</p>
+                <button class="button"data-url="https://www.geeksforgeeks.org/java/" 
+                    >Geek-for-Geeks</button>
+    
+                </div>
+    
+                
+            </div>
+            <div class="all-button">
+                <div class="button-1">
+    
+                    <p class="button-title">TcbScan</p>
+                    <p class="button-details">Practice programming here.
+                            The more you practice the more you will learn. 
+                            Try to solve atleast 1 problem per a day
+                            </p>
+                    <button class="button" data-url="https://tcbscans.com/" 
+                        >TcbScan</button>
+        
+                    </div> 
+            </div>
         </div>
         
-
-
-        <!--New Line button-->
-
-        <div class="all-button">
-
-            <div class="button-1">
-                
-            <p class="button-title">Messenger</p>
-            <p class="button-details">The Time your are wasting here is valuable.
-                It distracts you from your reality.Don't waste your time here.</p>
-            <button class="button" ><a class="button-text" href="https://www.messenger.com/" 
-            target="_blank">Messenger</a></button>
-
-            </div>
-
-            <div class="button-1">
-
-                <p class="button-title">Translator(Eng-Ban)</p>
-                <p class="button-details">Wacth youtube videos here. Learn new new skil here.
-                     Learn a lot.
-                    Gather your knowledge. Make yourself an asset.
-                </p>
-                <button class="button"><a class="button-text" 
-                    href="https://www.google.com/search?q=english+to+bangla&oq=&aqs=chrome.1.35i39i362l8.1878979j0j7&sourceid=chrome&ie=UTF-8" 
-                target="_blank">Translator</a></button>
-    
-                </div>
-            
-        <div class="button-1">
-
-            <p class="button-title">CGPA Calculator</p>
-            <p class="button-details">Watch your favourite Anime online.
-                 One piece, Nauto, bleach, jujutsu kaisen, Attack on titan and many more</p>
-            <button class="button"><a class="button-text" 
-                href="https://cgpa-next-term.netlify.app/?fbclid=IwAR2uPcVbRAbq_Ss-xoDu5LOiVVnmnOoDh6zvP4pXeu77x5G3cdLfia7gwHA" 
-            target="_blank">Cgpa Calculator</a></button>
-
-            </div>
-
-        <div class="button-1">
-
-            <p class="button-title">Geek-for-Geeks-Java</p>
-            <p class="button-details">Learn
-                    Programming in easy way here..Javascript, java, python, html, css..everything</p>
-            <button class="button"><a class="button-text" 
-                href="https://www.geeksforgeeks.org/java/" 
-            target="_blank">Geek-for-Geeks</a></button>
-
-            </div>
-
-            <div class="button-1">
-
-                <p class="button-title">TcbScan</p>
-                <p class="button-details">Practice programming here.
-                        The more you practice the more you will learn. 
-                        Try to solve atleast 1 problem per a day
-                        </p>
-                <button class="button"><a class="button-text" 
-                    href="https://tcbscans.com/" 
-                target="_blank">TcbScan</a></button>
-    
-                </div> 
-        </div>
+        <script>
+            // JavaScript to handle button clicks and redirect to the specified URL
+            document.getElementById("buttonContainer").addEventListener("click", function (event) {
+                if (event.target && event.target.matches(".button")) {
+                    var url = event.target.getAttribute("data-url");
+                    if (url) {
+                        window.open(url, "_blank"); // Opens link in a new tab
+                    }
+                }
+            });
+        </script>
     </body>
 </html>
